@@ -14,6 +14,6 @@ public class StockEntityConfig : IEntityTypeConfiguration<Stock>
     public void Configure(EntityTypeBuilder<Stock> builder)
     {
         builder.HasKey(s => s.Id);
-        builder.HasOne<Product>().WithOne(x => x.Stock).HasForeignKey<Stock>(x => x.ProductId);
+        builder.HasOne(x => x.Product).WithOne(x => x.Stock);
     }
 }
