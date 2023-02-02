@@ -9,7 +9,7 @@ using CustomerService.DTOs;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace CustomerService.CQRS.Commands.Queries;
+namespace CustomerService.CQRS.Queries;
 
 public class GetCustomersQuery : IRequest<IEnumerable<CustomerGetDto>>
 {

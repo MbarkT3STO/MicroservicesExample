@@ -2,7 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using CustomerService.CQRS.Commands.Queries;
+using CustomerService.CQRS.Commands;
+using CustomerService.CQRS.Queries;
 using CustomerService.Database;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -27,5 +28,19 @@ public class CustomersController : ControllerBase
     {
         var customers = await _mediator.Send(new GetCustomersQuery());
         return Ok(customers);
+    }
+
+    [HttpGet("{id}")]
+    public async Task<IActionResult> Get(string id)
+    {
+        var customer = await _mediator.Send(new GetCustomerByIdQuery(id));
+        return Ok(customer);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Post([FromBody] CreateCustomerCommand command)
+    {
+        var customer = await _mediator.Send(command);
+        return Ok(customer);
     }
 }

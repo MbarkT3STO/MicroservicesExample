@@ -39,3 +39,4 @@ C:\Users\mbark\Desktop\MicroservicesExample\Gateway.API\obj\Debug\net7.0\refint\
 C:\Users\mbark\Desktop\MicroservicesExample\Gateway.API\obj\Debug\net7.0\Gateway.API.pdb
 C:\Users\mbark\Desktop\MicroservicesExample\Gateway.API\obj\Debug\net7.0\Gateway.API.genruntimeconfig.cache
 C:\Users\mbark\Desktop\MicroservicesExample\Gateway.API\obj\Debug\net7.0\ref\Gateway.API.dll
+C:\Users\mbark\Desktop\MicroservicesExample\Gateway.API\bin\Debug\net7.0\Ocelot.json

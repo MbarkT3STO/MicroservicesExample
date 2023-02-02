@@ -1,0 +1,22 @@
+{
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/gateway/Customers/Get",
+      "UpstreamHttpMethod": ["Get"],
+      "DownstreamPathTemplate": "/api/Customers",
+      "DownstreamHostAndPorts": [{ "Host": "localhost", "Port": 5180 }]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/Customers/Get/{id}",
+      "UpstreamHttpMethod": ["Get"],
+      "DownstreamPathTemplate": "/api/Customers/{id}",
+      "DownstreamHostAndPorts": [{ "Host": "localhost", "Port": 5180 }]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/Customers/Post",
+      "UpstreamHttpMethod": ["Post"],
+      "DownstreamPathTemplate": "/api/Customers",
+      "DownstreamHostAndPorts": [{ "Host": "localhost", "Port": 5180 }]
+    }
+  ]
+}
