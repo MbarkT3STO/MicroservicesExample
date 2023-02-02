@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
+using ProductService.CQRS.Commands;
 using ProductService.Database.Entities;
 using ProductService.DTOs;
 
@@ -13,5 +14,6 @@ public class ProductMappingProfile : Profile
     public ProductMappingProfile()
     {
         CreateMap<Product, ProductGetDto>();
+        CreateMap<CreateProductCommand, Product>();
     }
 }

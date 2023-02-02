@@ -17,6 +17,25 @@
       "UpstreamHttpMethod": ["Post"],
       "DownstreamPathTemplate": "/api/Customers",
       "DownstreamHostAndPorts": [{ "Host": "localhost", "Port": 5180 }]
+    },
+
+    {
+      "UpstreamPathTemplate": "/gateway/Products/Get",
+      "UpstreamHttpMethod": ["Get"],
+      "DownstreamPathTemplate": "/api/Products",
+      "DownstreamHostAndPorts": [{ "Host": "localhost", "Port": 5165 }]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/Products/Get/{id}",
+      "UpstreamHttpMethod": ["Get"],
+      "DownstreamPathTemplate": "/api/Products/{id}",
+      "DownstreamHostAndPorts": [{ "Host": "localhost", "Port": 5165 }]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/Products/Post",
+      "UpstreamHttpMethod": ["Post"],
+      "DownstreamPathTemplate": "/api/Products",
+      "DownstreamHostAndPorts": [{ "Host": "localhost", "Port": 5165 }]
     }
   ]
 }
