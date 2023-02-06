@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LkKu2hdQf2lyoWy3AmsGCEGVBOqiZze33VhsSLd16HnDLyNA/+sZ5AP6IgisWrHrH8w9P6dyT2iAbXVRciX1bg==",
+  "dgSpecHash": "y0TQ1S9It0JvZ2n1BK1PCvpjcUo9p4mQ5hIkM7UexVSWj68NWrvB/KlGGhaLXyKcGM5ynHpwM8DeGD3bjQvkdw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mbark\\Desktop\\MicroservicesExample\\Shared.CQRS\\Shared.CQRS.csproj",
+  "projectFilePath": "c:\\Users\\mbark\\Documents\\GitHub\\MicroservicesExample\\Shared.CQRS\\Shared.CQRS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mbark\\.nuget\\packages\\mediatr\\11.1.0\\mediatr.11.1.0.nupkg.sha512",
     "C:\\Users\\mbark\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512"
