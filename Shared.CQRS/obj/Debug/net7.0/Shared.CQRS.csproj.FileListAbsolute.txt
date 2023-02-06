@@ -10,3 +10,15 @@ C:\Users\mbark\Desktop\MicroservicesExample\Shared.CQRS\obj\Debug\net7.0\Shared.
 C:\Users\mbark\Desktop\MicroservicesExample\Shared.CQRS\obj\Debug\net7.0\refint\Shared.CQRS.dll
 C:\Users\mbark\Desktop\MicroservicesExample\Shared.CQRS\obj\Debug\net7.0\Shared.CQRS.pdb
 C:\Users\mbark\Desktop\MicroservicesExample\Shared.CQRS\obj\Debug\net7.0\ref\Shared.CQRS.dll
+C:\Users\mbark\Documents\GitHub\MicroservicesExample\Shared.CQRS\bin\Debug\net7.0\Shared.CQRS.deps.json
+C:\Users\mbark\Documents\GitHub\MicroservicesExample\Shared.CQRS\bin\Debug\net7.0\Shared.CQRS.dll
+C:\Users\mbark\Documents\GitHub\MicroservicesExample\Shared.CQRS\bin\Debug\net7.0\Shared.CQRS.pdb
+C:\Users\mbark\Documents\GitHub\MicroservicesExample\Shared.CQRS\obj\Debug\net7.0\Shared.CQRS.csproj.AssemblyReference.cache
+C:\Users\mbark\Documents\GitHub\MicroservicesExample\Shared.CQRS\obj\Debug\net7.0\Shared.CQRS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mbark\Documents\GitHub\MicroservicesExample\Shared.CQRS\obj\Debug\net7.0\Shared.CQRS.AssemblyInfoInputs.cache
+C:\Users\mbark\Documents\GitHub\MicroservicesExample\Shared.CQRS\obj\Debug\net7.0\Shared.CQRS.AssemblyInfo.cs
+C:\Users\mbark\Documents\GitHub\MicroservicesExample\Shared.CQRS\obj\Debug\net7.0\Shared.CQRS.csproj.CoreCompileInputs.cache
+C:\Users\mbark\Documents\GitHub\MicroservicesExample\Shared.CQRS\obj\Debug\net7.0\Shared.CQRS.dll
+C:\Users\mbark\Documents\GitHub\MicroservicesExample\Shared.CQRS\obj\Debug\net7.0\refint\Shared.CQRS.dll
+C:\Users\mbark\Documents\GitHub\MicroservicesExample\Shared.CQRS\obj\Debug\net7.0\Shared.CQRS.pdb
+C:\Users\mbark\Documents\GitHub\MicroservicesExample\Shared.CQRS\obj\Debug\net7.0\ref\Shared.CQRS.dll
