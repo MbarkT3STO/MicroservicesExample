@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\mbark\\Desktop\\MicroservicesExample\\Gateway.API\\Gateway.API.csproj": {}
+    "C:\\Users\\mbark\\Documents\\GitHub\\MicroservicesExample\\Gateway.API\\Gateway.API.csproj": {}
   },
   "projects": {
-    "c:\\Users\\mbark\\Desktop\\MicroservicesExample\\Gateway.API\\Gateway.API.csproj": {
+    "C:\\Users\\mbark\\Documents\\GitHub\\MicroservicesExample\\Gateway.API\\Gateway.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\mbark\\Desktop\\MicroservicesExample\\Gateway.API\\Gateway.API.csproj",
+        "projectUniqueName": "C:\\Users\\mbark\\Documents\\GitHub\\MicroservicesExample\\Gateway.API\\Gateway.API.csproj",
         "projectName": "Gateway.API",
-        "projectPath": "c:\\Users\\mbark\\Desktop\\MicroservicesExample\\Gateway.API\\Gateway.API.csproj",
+        "projectPath": "C:\\Users\\mbark\\Documents\\GitHub\\MicroservicesExample\\Gateway.API\\Gateway.API.csproj",
         "packagesPath": "C:\\Users\\mbark\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\mbark\\Desktop\\MicroservicesExample\\Gateway.API\\obj\\",
+        "outputPath": "C:\\Users\\mbark\\Documents\\GitHub\\MicroservicesExample\\Gateway.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -77,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -160,3 +160,7 @@ C:\Users\mbark\Documents\GitHub\MicroservicesExample\CustomerService\obj\Debug\n
 C:\Users\mbark\Documents\GitHub\MicroservicesExample\CustomerService\obj\Debug\net7.0\CustomerService.pdb
 C:\Users\mbark\Documents\GitHub\MicroservicesExample\CustomerService\obj\Debug\net7.0\CustomerService.genruntimeconfig.cache
 C:\Users\mbark\Documents\GitHub\MicroservicesExample\CustomerService\obj\Debug\net7.0\ref\CustomerService.dll
+C:\Users\mbark\Documents\GitHub\MicroservicesExample\CustomerService\bin\Debug\net7.0\MassTransit.dll
+C:\Users\mbark\Documents\GitHub\MicroservicesExample\CustomerService\bin\Debug\net7.0\MassTransit.Abstractions.dll
+C:\Users\mbark\Documents\GitHub\MicroservicesExample\CustomerService\bin\Debug\net7.0\MassTransit.RabbitMqTransport.dll
+C:\Users\mbark\Documents\GitHub\MicroservicesExample\CustomerService\bin\Debug\net7.0\RabbitMQ.Client.dll
