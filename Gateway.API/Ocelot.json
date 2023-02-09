@@ -36,6 +36,25 @@
       "UpstreamHttpMethod": ["Post"],
       "DownstreamPathTemplate": "/api/Products",
       "DownstreamHostAndPorts": [{ "Host": "localhost", "Port": 5165 }]
+    },
+
+    {
+      "UpstreamPathTemplate": "/gateway/Orders/Get",
+      "UpstreamHttpMethod": ["Get"],
+      "DownstreamPathTemplate": "/api/Orders",
+      "DownstreamHostAndPorts": [{ "Host": "localhost", "Port": 5006 }]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/Orders/Get/{id}",
+      "UpstreamHttpMethod": ["Get"],
+      "DownstreamPathTemplate": "/api/Orders/{id}",
+      "DownstreamHostAndPorts": [{ "Host": "localhost", "Port": 5006 }]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/Orders/Post",
+      "UpstreamHttpMethod": ["Post"],
+      "DownstreamPathTemplate": "/api/Orders",
+      "DownstreamHostAndPorts": [{ "Host": "localhost", "Port": 5006 }]
     }
   ]
 }

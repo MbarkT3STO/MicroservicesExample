@@ -1,3 +1,4 @@
+using MassTransit;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
@@ -15,6 +16,9 @@ builder.Services.AddAutoMapper(typeof(Program).Assembly);
 
 // Add MediatR
 builder.Services.AddMediatR(typeof(Program).Assembly);
+
+// Add MassTransit
+builder.Services.AddMassTransit(x => x.UsingRabbitMq());
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
