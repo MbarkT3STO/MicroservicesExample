@@ -1504,6 +1504,16 @@
             "rid": "win"
           }
         }
+      },
+      "Shared.Messages/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Shared.Messages.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.Messages.dll": {}
+        }
       }
     }
   },
@@ -4539,6 +4549,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Shared.Messages/1.0.0": {
+      "type": "project",
+      "path": "../Shared.Messages/Shared.Messages.csproj",
+      "msbuildProject": "../Shared.Messages/Shared.Messages.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4557,6 +4572,7 @@
       "Microsoft.EntityFrameworkCore.Relational >= 7.0.2",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.2",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.2",
+      "Shared.Messages >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
   },
@@ -4567,11 +4583,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\mbark\\Desktop\\MicroservicesExample\\ProductService\\ProductService.csproj",
+      "projectUniqueName": "C:\\Users\\mbark\\Desktop\\MicroservicesExample\\ProductService\\ProductService.csproj",
       "projectName": "ProductService",
-      "projectPath": "c:\\Users\\mbark\\Desktop\\MicroservicesExample\\ProductService\\ProductService.csproj",
+      "projectPath": "C:\\Users\\mbark\\Desktop\\MicroservicesExample\\ProductService\\ProductService.csproj",
       "packagesPath": "C:\\Users\\mbark\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\mbark\\Desktop\\MicroservicesExample\\ProductService\\obj\\",
+      "outputPath": "C:\\Users\\mbark\\Desktop\\MicroservicesExample\\ProductService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4592,7 +4608,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\mbark\\Desktop\\MicroservicesExample\\Shared.Messages\\Shared.Messages.csproj": {
+              "projectPath": "C:\\Users\\mbark\\Desktop\\MicroservicesExample\\Shared.Messages\\Shared.Messages.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

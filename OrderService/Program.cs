@@ -2,6 +2,7 @@ using MassTransit;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
+using OrderService.Configs;
 using OrderService.Database;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,6 +17,9 @@ builder.Services.AddAutoMapper(typeof(Program).Assembly);
 
 // Add MediatR
 builder.Services.AddMediatR(typeof(Program).Assembly);
+
+// Add Configs
+builder.Services.Configure<RabbitMqEndPointsConfig>(builder.Configuration.GetSection("RabbitMqEndPoints"));
 
 // Add MassTransit
 builder.Services.AddMassTransit(x => x.UsingRabbitMq());

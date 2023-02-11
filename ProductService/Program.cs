@@ -1,7 +1,9 @@
+using MassTransit;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using ProductService.Database;
+using ProductService.MessageConsumers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +17,20 @@ builder.Services.AddMediatR(typeof(Program).Assembly);
 
 // Add AutoMapper
 builder.Services.AddAutoMapper(typeof(Program).Assembly);
+
+// Configure MassTransit
+builder.Services.AddMassTransit(x =>
+{
+    x.AddConsumer<OrderCreatedMessageConsumer>();
+
+    x.UsingRabbitMq((context, cfg) =>
+    {
+        cfg.Host("rabbitmq://localhost");
+
+        cfg.ReceiveEndpoint("Product-Service", e => e.ConfigureConsumer<OrderCreatedMessageConsumer>(context));
+
+    });
+});
 
 
 builder.Services.AddControllers();
