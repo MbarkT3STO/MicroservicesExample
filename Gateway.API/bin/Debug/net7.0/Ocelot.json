@@ -55,6 +55,43 @@
       "UpstreamHttpMethod": ["Post"],
       "DownstreamPathTemplate": "/api/Orders",
       "DownstreamHostAndPorts": [{ "Host": "localhost", "Port": 5006 }]
+    },
+
+    {
+      "UpstreamPathTemplate": "/gateway/Auth/GetUsers",
+      "UpstreamHttpMethod": ["Get"],
+      "DownstreamPathTemplate": "/api/Auth/GetUsers",
+      "DownstreamHostAndPorts": [{ "Host": "localhost", "Port": 5170 }]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/Auth/GetUser/{id}",
+      "UpstreamHttpMethod": ["Get"],
+      "DownstreamPathTemplate": "/api/Auth/GetUser/{id}",
+      "DownstreamHostAndPorts": [{ "Host": "localhost", "Port": 5170 }]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/Auth/GetRefreshTokens",
+      "UpstreamHttpMethod": ["Get"],
+      "DownstreamPathTemplate": "/api/Auth/GetRefreshTokens",
+      "DownstreamHostAndPorts": [{ "Host": "localhost", "Port": 5170 }]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/Auth/GetRefreshToken/{id}",
+      "UpstreamHttpMethod": ["Get"],
+      "DownstreamPathTemplate": "/api/Auth/GetRefreshToken/{id}",
+      "DownstreamHostAndPorts": [{ "Host": "localhost", "Port": 5170 }]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/Auth/CreateRefreshToken",
+      "UpstreamHttpMethod": ["Post"],
+      "DownstreamPathTemplate": "/api/Auth/CreateRefreshToken",
+      "DownstreamHostAndPorts": [{ "Host": "localhost", "Port": 5170 }]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/Auth/CreateJwt",
+      "UpstreamHttpMethod": ["Post"],
+      "DownstreamPathTemplate": "/api/Auth/CreateJwt",
+      "DownstreamHostAndPorts": [{ "Host": "localhost", "Port": 5170 }]
     }
   ]
 }

@@ -164,3 +164,7 @@ C:\Users\mbark\Documents\GitHub\MicroservicesExample\CustomerService\bin\Debug\n
 C:\Users\mbark\Documents\GitHub\MicroservicesExample\CustomerService\bin\Debug\net7.0\MassTransit.Abstractions.dll
 C:\Users\mbark\Documents\GitHub\MicroservicesExample\CustomerService\bin\Debug\net7.0\MassTransit.RabbitMqTransport.dll
 C:\Users\mbark\Documents\GitHub\MicroservicesExample\CustomerService\bin\Debug\net7.0\RabbitMQ.Client.dll
+C:\Users\mbark\Desktop\MicroservicesExample\CustomerService\bin\Debug\net7.0\MassTransit.dll
+C:\Users\mbark\Desktop\MicroservicesExample\CustomerService\bin\Debug\net7.0\MassTransit.Abstractions.dll
+C:\Users\mbark\Desktop\MicroservicesExample\CustomerService\bin\Debug\net7.0\MassTransit.RabbitMqTransport.dll
+C:\Users\mbark\Desktop\MicroservicesExample\CustomerService\bin\Debug\net7.0\RabbitMQ.Client.dll
