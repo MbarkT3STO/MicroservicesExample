@@ -82,15 +82,15 @@
       "DownstreamHostAndPorts": [{ "Host": "localhost", "Port": 5170 }]
     },
     {
-      "UpstreamPathTemplate": "/gateway/Auth/CreateRefreshToken",
+      "UpstreamPathTemplate": "/gateway/Auth/Login",
       "UpstreamHttpMethod": ["Post"],
-      "DownstreamPathTemplate": "/api/Auth/CreateRefreshToken",
+      "DownstreamPathTemplate": "/api/Auth/Login",
       "DownstreamHostAndPorts": [{ "Host": "localhost", "Port": 5170 }]
     },
     {
-      "UpstreamPathTemplate": "/gateway/Auth/CreateJwt",
+      "UpstreamPathTemplate": "/gateway/Auth/CreateRefreshToken",
       "UpstreamHttpMethod": ["Post"],
-      "DownstreamPathTemplate": "/api/Auth/CreateJwt",
+      "DownstreamPathTemplate": "/api/Auth/CreateRefreshToken",
       "DownstreamHostAndPorts": [{ "Host": "localhost", "Port": 5170 }]
     }
   ]

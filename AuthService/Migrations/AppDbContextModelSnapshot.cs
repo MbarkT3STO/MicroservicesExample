@@ -99,16 +99,16 @@ namespace AuthService.Migrations
                         {
                             Id = "1",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "336a93ab-f81f-4a69-acf8-13e47fd5f944",
+                            ConcurrencyStamp = "ae392036-bff5-4372-83e8-87522bc0eb1c",
                             Email = "mbark@mail.com",
                             EmailConfirmed = false,
                             FirstName = "MBARK",
                             LastName = "T3STO",
                             LockoutEnabled = false,
                             NormalizedUserName = "MBARK",
-                            PasswordHash = "AQAAAAIAAYagAAAAEM7LaNTZOmk018+txl3AtwX0xi2tJKmcGxJgJ4EtZ6ZyJBPjH79LmckNLWOmPKOlNA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEMQE2npfTgXsQwmWoEqA6xUlWTVmP+6mQLGhHKXAuU+rmrbvR6YH1HwltMCPiwyCvg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "a17fabd5-dcba-471d-b491-9ec0fd4bc9ee",
+                            SecurityStamp = "66436caa-3052-42b2-863f-7d2b3642b122",
                             TwoFactorEnabled = false,
                             UserName = "mbark"
                         },
@@ -116,15 +116,15 @@ namespace AuthService.Migrations
                         {
                             Id = "2",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "a0bd6df5-bec5-4483-a3e4-ae37e4b936f7",
+                            ConcurrencyStamp = "dcf9678c-9990-4b68-a31c-91728156d9ce",
                             EmailConfirmed = false,
                             FirstName = "Admin",
                             LastName = "Admin",
                             LockoutEnabled = false,
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAIAAYagAAAAEM7LaNTZOmk018+txl3AtwX0xi2tJKmcGxJgJ4EtZ6ZyJBPjH79LmckNLWOmPKOlNA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEMQE2npfTgXsQwmWoEqA6xUlWTVmP+6mQLGhHKXAuU+rmrbvR6YH1HwltMCPiwyCvg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "62006f45-8cad-452d-9089-f34dcddf1a72",
+                            SecurityStamp = "dc879355-03a0-405e-9b96-1fdf4f989002",
                             TwoFactorEnabled = false,
                             UserName = "admin"
                         },
@@ -132,15 +132,15 @@ namespace AuthService.Migrations
                         {
                             Id = "3",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "9c505d8b-6647-468b-94a5-93616beb2cc8",
+                            ConcurrencyStamp = "e2e2fa0e-77eb-4ada-a54d-d0cf2c4942a1",
                             EmailConfirmed = false,
                             FirstName = "User",
                             LastName = "User",
                             LockoutEnabled = false,
                             NormalizedUserName = "USER",
-                            PasswordHash = "AQAAAAIAAYagAAAAEM7LaNTZOmk018+txl3AtwX0xi2tJKmcGxJgJ4EtZ6ZyJBPjH79LmckNLWOmPKOlNA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEMQE2npfTgXsQwmWoEqA6xUlWTVmP+6mQLGhHKXAuU+rmrbvR6YH1HwltMCPiwyCvg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "1dbf0274-68b6-4e69-b530-c9236d558071",
+                            SecurityStamp = "cfd06b5d-a314-41d9-a33d-e1e5d8231ab1",
                             TwoFactorEnabled = false,
                             UserName = "user"
                         });
@@ -169,10 +169,6 @@ namespace AuthService.Migrations
 
                     b.Property<bool>("IsUsed")
                         .HasColumnType("bit");
-
-                    b.Property<string>("JwtId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("RevokedOn")
                         .HasColumnType("datetime2");

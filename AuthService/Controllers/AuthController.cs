@@ -67,45 +67,22 @@ public class AuthController : ControllerBase
         return Ok(refreshTokenGetModel);
     }
 
-    [HttpPost("CreateRefreshToken")]
-    public async Task<IActionResult> CreateRefreshToken(RefreshTokenCreateModel model)
-    {
-        var user = await _userManager.FindByNameAsync(model.Username);
 
-        if (user == null) return BadRequest("Invalid username");
-
-        var token = GenerateRefreshToken();
-
-        var refreshToken = new RefreshToken
-        {
-            Token = token,
-            JwtId = model.Jwt,
-            CreatedOn = DateTime.Now,
-            ExpiresOn = DateTime.Now.AddHours(1),
-            AppUserId = user.Id,
-        };
-
-        await _context.RefreshTokens.AddAsync(refreshToken);
-        await _context.SaveChangesAsync();
-        await _context.Entry(refreshToken).ReloadAsync();
-
-        var refreshTokenGetModel = _mapper.Map<RefreshTokenGetModel>(refreshToken);
-
-        return Ok(refreshTokenGetModel);
-    }
-
-    [HttpPost("CreateJwt")]
-    public async Task<IActionResult> CreateJwt(CreateJwtModel model)
+    [HttpPost("Login")]
+    public async Task<IActionResult> Login(LoginModel model)
     {
 
         var signInResult = await _signInManager.PasswordSignInAsync(model.Username, model.Password, false, false);
 
         if (!signInResult.Succeeded) return BadRequest("Invalid username or password");
 
+        var user = await _userManager.FindByNameAsync(model.Username);
         var jwt = GenerateJwtToken(model.Username);
-        var createdJwtModel = new CreatedJwtModel
+        var refreshToken = await GenerateRefreshToken(user.Id);
+        var createdJwtModel = new SucceededLoginModel
         {
             Token = jwt,
+            RefreshToken = refreshToken.Token,
             Username = model.Username,
             CreatedOn = DateTime.Now,
             ExpiresOn = DateTime.Now.AddMinutes(5)
@@ -113,6 +90,22 @@ public class AuthController : ControllerBase
 
         return Ok(createdJwtModel);
     }
+
+
+    [HttpPost("CreateRefreshToken")]
+    public async Task<IActionResult> CreateRefreshToken(RefreshTokenCreateModel model)
+    {
+        var user = await _userManager.FindByNameAsync(model.Username);
+
+        if (user == null) return BadRequest("Invalid username");
+
+        var refreshToken = GenerateRefreshToken(user.Id);
+
+        var refreshTokenGetModel = _mapper.Map<RefreshTokenGetModel>(refreshToken);
+
+        return Ok(refreshTokenGetModel);
+    }
+
 
 
     private string GenerateJwtToken(string username)
@@ -139,10 +132,22 @@ public class AuthController : ControllerBase
         return new JwtSecurityTokenHandler().WriteToken(token);
     }
 
-    private string GenerateRefreshToken()
+    private async Task<RefreshToken> GenerateRefreshToken(string userId)
     {
         var token = Guid.NewGuid().ToString();
 
-        return token;
+        var refreshToken = new RefreshToken
+        {
+            Token = token,
+            CreatedOn = DateTime.Now,
+            ExpiresOn = DateTime.Now.AddHours(1),
+            AppUserId = userId
+        };
+
+        await _context.RefreshTokens.AddAsync(refreshToken);
+        await _context.SaveChangesAsync();
+        await _context.Entry(refreshToken).ReloadAsync();
+
+        return refreshToken;
     }
 }

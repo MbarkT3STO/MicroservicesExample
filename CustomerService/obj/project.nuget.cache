@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4Z6EDE+Or399/d2lovNOu0s3knbed+DbINJgSfc/PqN1ccangGugkXdsuCLBuea828DfN+8duRtyme/DvSlzfQ==",
+  "dgSpecHash": "7aiXAZgizXqEPKS+tXyjdbpGwENuIhhY4Ij2IAA+QoOzBZ0nWxtTpcWnfEzjm/6hgAdECuDcEIc4epptlvhEcw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mbark\\Desktop\\MicroservicesExample\\CustomerService\\CustomerService.csproj",
+  "projectFilePath": "c:\\Users\\mbark\\Desktop\\MicroservicesExample\\CustomerService\\CustomerService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mbark\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\mbark\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

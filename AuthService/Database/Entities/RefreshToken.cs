@@ -9,7 +9,6 @@ public class RefreshToken
 {
     public int Id { get; set; }
     public string Token { get; set; }
-    public string JwtId { get; set; }
     public DateTime CreatedOn { get; set; }
     public DateTime ExpiresOn { get; set; }
     public bool IsExpired => DateTime.UtcNow >= ExpiresOn;

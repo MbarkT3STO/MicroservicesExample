@@ -7,6 +7,5 @@ namespace AuthService.Models;
 
 public class RefreshTokenCreateModel
 {
-    public string Jwt { get; set; }
     public string Username { get; set; }
 }
