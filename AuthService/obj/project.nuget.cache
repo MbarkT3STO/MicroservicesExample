@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "b0GMYEsZE1f37aSsb4WX3sE0NWRxKXZfiOaQ5OUKkSe2wHIdt8S5MzVqF8+XwfbX8Z8N23lh6X8Wv5iGvy0m/w==",
+  "dgSpecHash": "hFhLOmwbKHlSogcVJLiRL3FS4JKvoEAl2WK8SEGmGMSSuBGXOppjiwyHmOMHetfwkTALhYgAXcQNqdQr8I0R2A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mbark\\Desktop\\MicroservicesExample\\AuthService\\AuthService.csproj",
+  "projectFilePath": "C:\\Users\\mbark\\Documents\\GitHub\\MicroservicesExample\\AuthService\\AuthService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mbark\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\mbark\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

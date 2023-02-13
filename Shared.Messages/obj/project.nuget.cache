@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cCcnBOVpzwWOCWJPNM2Kmvr+jY12x5QMQW6MGZj5Fq1ulxXwM415Cl5VU947cOp4Jq7e8DAOKjHb5p1K8mTJpw==",
+  "dgSpecHash": "aODJFXDtBCsdRlv1qNnaXelN+vQGEZKSZy6RBZmtUAnkpJ7O9ij+v3T0bHc2rB+7jsYzBeFVVr0vp05Lx2btrg==",
   "success": true,
-  "projectFilePath": "c:\\Users\\mbark\\Desktop\\MicroservicesExample\\Shared.Messages\\Shared.Messages.csproj",
+  "projectFilePath": "C:\\Users\\mbark\\Documents\\GitHub\\MicroservicesExample\\Shared.Messages\\Shared.Messages.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -92,6 +92,12 @@
       "UpstreamHttpMethod": ["Post"],
       "DownstreamPathTemplate": "/api/Auth/CreateRefreshToken",
       "DownstreamHostAndPorts": [{ "Host": "localhost", "Port": 5170 }]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/Auth/RefreshToken",
+      "UpstreamHttpMethod": ["Post"],
+      "DownstreamPathTemplate": "/api/Auth/RefreshToken",
+      "DownstreamHostAndPorts": [{ "Host": "localhost", "Port": 5170 }]
     }
   ]
 }

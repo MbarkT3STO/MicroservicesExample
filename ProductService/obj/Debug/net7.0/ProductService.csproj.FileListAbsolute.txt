@@ -166,3 +166,9 @@ C:\Users\mbark\Desktop\MicroservicesExample\ProductService\bin\Debug\net7.0\Mass
 C:\Users\mbark\Desktop\MicroservicesExample\ProductService\bin\Debug\net7.0\RabbitMQ.Client.dll
 C:\Users\mbark\Desktop\MicroservicesExample\ProductService\bin\Debug\net7.0\Shared.Messages.dll
 C:\Users\mbark\Desktop\MicroservicesExample\ProductService\bin\Debug\net7.0\Shared.Messages.pdb
+C:\Users\mbark\Documents\GitHub\MicroservicesExample\ProductService\bin\Debug\net7.0\MassTransit.dll
+C:\Users\mbark\Documents\GitHub\MicroservicesExample\ProductService\bin\Debug\net7.0\MassTransit.Abstractions.dll
+C:\Users\mbark\Documents\GitHub\MicroservicesExample\ProductService\bin\Debug\net7.0\MassTransit.RabbitMqTransport.dll
+C:\Users\mbark\Documents\GitHub\MicroservicesExample\ProductService\bin\Debug\net7.0\RabbitMQ.Client.dll
+C:\Users\mbark\Documents\GitHub\MicroservicesExample\ProductService\bin\Debug\net7.0\Shared.Messages.dll
+C:\Users\mbark\Documents\GitHub\MicroservicesExample\ProductService\bin\Debug\net7.0\Shared.Messages.pdb

@@ -106,7 +106,34 @@ public class AuthController : ControllerBase
         return Ok(refreshTokenGetModel);
     }
 
+    [HttpPost("RefreshToken")]
+    public async Task<ActionResult> RefreshToken(RefreshTokenRequestModel model)
+    {
+        var user = await _userManager.FindByNameAsync(model.Username);
 
+        if (user == null) return BadRequest("Invalid username");
+
+        var refreshToken = await _context.RefreshTokens.FirstOrDefaultAsync(x => x.Token == model.RefreshToken && x.UserId == user.Id);
+
+        if (refreshToken == null) return BadRequest("Invalid refresh token");
+
+        if (refreshToken.IsExpired) return BadRequest("Refresh token is expired");
+
+        if (refreshToken.IsRevoked) return BadRequest("Refresh token is revoked");
+
+        var jwt = await GenerateJwtToken(model.Username);
+
+        var createdJwt = new RefreshTokenRequestSucceededModel
+        {
+            NewToken = jwt,
+            RefreshToken = model.RefreshToken,
+            Username = model.Username,
+            CreatedOn = DateTime.UtcNow,
+            ExpiresOn = DateTime.UtcNow.AddMinutes(5)
+        };
+
+        return Ok(createdJwt);
+    }
 
     private string GenerateJwtToken(string username)
     {
