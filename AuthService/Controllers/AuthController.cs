@@ -107,6 +107,35 @@ public class AuthController : ControllerBase
     }
 
 
+    [HttpPost("RefreshToken")]
+    public async Task<IActionResult> RefreshToken(RefreshTokenRequestModel model)
+    {
+        var refreshToken = await _context.RefreshTokens.FirstOrDefaultAsync(x => x.Token == model.RefreshToken);
+
+        if (refreshToken == null) return BadRequest("Invalid refresh token");
+
+        if (refreshToken.IsExpired) return BadRequest("Refresh token expired");
+
+        if (refreshToken.IsRevoked) return BadRequest("Refresh token revoked");
+
+        if (refreshToken.IsInvalidated) return BadRequest("Refresh token invalidated");
+
+        var user = await _userManager.FindByNameAsync(model.Username);
+
+        var jwt = GenerateJwtToken(model.Username);
+
+        var result = new RefreshTokenRequestSucceededModel
+        {
+            NewToken = jwt,
+            RefreshToken = refreshToken.Token,
+            Username = model.Username,
+            CreatedOn = DateTime.Now,
+            ExpiresOn = DateTime.Now.AddMinutes(5)
+        };
+
+        return Ok(result);
+    }
+
 
     private string GenerateJwtToken(string username)
     {
@@ -114,6 +143,7 @@ public class AuthController : ControllerBase
         {
             new Claim(JwtRegisteredClaimNames.Sub, username),
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+            new Claim("Role", "Admin")
         };
 
         var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtOptions.Key));

@@ -42,7 +42,11 @@
       "UpstreamPathTemplate": "/gateway/Orders/Get",
       "UpstreamHttpMethod": ["Get"],
       "DownstreamPathTemplate": "/api/Orders",
-      "DownstreamHostAndPorts": [{ "Host": "localhost", "Port": 5006 }]
+      "DownstreamHostAndPorts": [{ "Host": "localhost", "Port": 5006 }],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
     },
     {
       "UpstreamPathTemplate": "/gateway/Orders/Get/{id}",
@@ -91,6 +95,12 @@
       "UpstreamPathTemplate": "/gateway/Auth/CreateRefreshToken",
       "UpstreamHttpMethod": ["Post"],
       "DownstreamPathTemplate": "/api/Auth/CreateRefreshToken",
+      "DownstreamHostAndPorts": [{ "Host": "localhost", "Port": 5170 }]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/Auth/RefreshToken",
+      "UpstreamHttpMethod": ["Post"],
+      "DownstreamPathTemplate": "/api/Auth/RefreshToken",
       "DownstreamHostAndPorts": [{ "Host": "localhost", "Port": 5170 }]
     }
   ]

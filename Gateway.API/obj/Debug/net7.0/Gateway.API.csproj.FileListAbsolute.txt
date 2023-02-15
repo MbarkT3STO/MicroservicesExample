@@ -82,3 +82,10 @@ C:\Users\mbark\Documents\GitHub\MicroservicesExample\Gateway.API\obj\Debug\net7.
 C:\Users\mbark\Documents\GitHub\MicroservicesExample\Gateway.API\obj\Debug\net7.0\Gateway.API.pdb
 C:\Users\mbark\Documents\GitHub\MicroservicesExample\Gateway.API\obj\Debug\net7.0\Gateway.API.genruntimeconfig.cache
 C:\Users\mbark\Documents\GitHub\MicroservicesExample\Gateway.API\obj\Debug\net7.0\ref\Gateway.API.dll
+C:\Users\mbark\Desktop\MicroservicesExample\Gateway.API\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\mbark\Desktop\MicroservicesExample\Gateway.API\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\mbark\Desktop\MicroservicesExample\Gateway.API\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\mbark\Desktop\MicroservicesExample\Gateway.API\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\mbark\Desktop\MicroservicesExample\Gateway.API\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\mbark\Desktop\MicroservicesExample\Gateway.API\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\mbark\Desktop\MicroservicesExample\Gateway.API\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
