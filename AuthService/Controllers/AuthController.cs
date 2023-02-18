@@ -136,6 +136,9 @@ public class AuthController : ControllerBase
         return Ok(result);
     }
 
+        return Ok(createdJwt);
+    }
+>>>>>>> 2a4bc597439426aa7f72e5941eed6a456792d4b3
 
     private string GenerateJwtToken(string username)
     {

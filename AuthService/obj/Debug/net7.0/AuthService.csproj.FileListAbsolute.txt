@@ -84,3 +84,13 @@ C:\Users\mbark\Desktop\MicroservicesExample\AuthService\obj\Debug\net7.0\AuthSer
 C:\Users\mbark\Desktop\MicroservicesExample\AuthService\obj\Debug\net7.0\ref\AuthService.dll
 C:\Users\mbark\Desktop\MicroservicesExample\AuthService\bin\Debug\net7.0\AutoMapper.dll
 C:\Users\mbark\Desktop\MicroservicesExample\AuthService\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\mbark\Documents\GitHub\MicroservicesExample\AuthService\obj\Debug\net7.0\AuthService.csproj.AssemblyReference.cache
+C:\Users\mbark\Documents\GitHub\MicroservicesExample\AuthService\obj\Debug\net7.0\AuthService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mbark\Documents\GitHub\MicroservicesExample\AuthService\obj\Debug\net7.0\AuthService.AssemblyInfoInputs.cache
+C:\Users\mbark\Documents\GitHub\MicroservicesExample\AuthService\obj\Debug\net7.0\AuthService.AssemblyInfo.cs
+C:\Users\mbark\Documents\GitHub\MicroservicesExample\AuthService\obj\Debug\net7.0\AuthService.csproj.CoreCompileInputs.cache
+C:\Users\mbark\Documents\GitHub\MicroservicesExample\AuthService\obj\Debug\net7.0\AuthService.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\mbark\Documents\GitHub\MicroservicesExample\AuthService\obj\Debug\net7.0\AuthService.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\mbark\Documents\GitHub\MicroservicesExample\AuthService\obj\Debug\net7.0\AuthService.dll
+C:\Users\mbark\Documents\GitHub\MicroservicesExample\AuthService\obj\Debug\net7.0\refint\AuthService.dll
+C:\Users\mbark\Documents\GitHub\MicroservicesExample\AuthService\obj\Debug\net7.0\AuthService.pdb

@@ -10,3 +10,15 @@ C:\Users\mbark\Desktop\MicroservicesExample\Shared.Messages\obj\Debug\net7.0\Sha
 C:\Users\mbark\Desktop\MicroservicesExample\Shared.Messages\obj\Debug\net7.0\refint\Shared.Messages.dll
 C:\Users\mbark\Desktop\MicroservicesExample\Shared.Messages\obj\Debug\net7.0\Shared.Messages.pdb
 C:\Users\mbark\Desktop\MicroservicesExample\Shared.Messages\obj\Debug\net7.0\ref\Shared.Messages.dll
+C:\Users\mbark\Documents\GitHub\MicroservicesExample\Shared.Messages\bin\Debug\net7.0\Shared.Messages.deps.json
+C:\Users\mbark\Documents\GitHub\MicroservicesExample\Shared.Messages\bin\Debug\net7.0\Shared.Messages.dll
+C:\Users\mbark\Documents\GitHub\MicroservicesExample\Shared.Messages\bin\Debug\net7.0\Shared.Messages.pdb
+C:\Users\mbark\Documents\GitHub\MicroservicesExample\Shared.Messages\obj\Debug\net7.0\Shared.Messages.csproj.AssemblyReference.cache
+C:\Users\mbark\Documents\GitHub\MicroservicesExample\Shared.Messages\obj\Debug\net7.0\Shared.Messages.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mbark\Documents\GitHub\MicroservicesExample\Shared.Messages\obj\Debug\net7.0\Shared.Messages.AssemblyInfoInputs.cache
+C:\Users\mbark\Documents\GitHub\MicroservicesExample\Shared.Messages\obj\Debug\net7.0\Shared.Messages.AssemblyInfo.cs
+C:\Users\mbark\Documents\GitHub\MicroservicesExample\Shared.Messages\obj\Debug\net7.0\Shared.Messages.csproj.CoreCompileInputs.cache
+C:\Users\mbark\Documents\GitHub\MicroservicesExample\Shared.Messages\obj\Debug\net7.0\Shared.Messages.dll
+C:\Users\mbark\Documents\GitHub\MicroservicesExample\Shared.Messages\obj\Debug\net7.0\refint\Shared.Messages.dll
+C:\Users\mbark\Documents\GitHub\MicroservicesExample\Shared.Messages\obj\Debug\net7.0\Shared.Messages.pdb
+C:\Users\mbark\Documents\GitHub\MicroservicesExample\Shared.Messages\obj\Debug\net7.0\ref\Shared.Messages.dll
